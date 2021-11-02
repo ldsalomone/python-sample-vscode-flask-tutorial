@@ -18,7 +18,11 @@
             {% endblock %}
             <hr/>
             <footer>
-                <p>&copy; 2021</p>
+                <p>&copy; 
+                    <span id="copyright">
+                    <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+                    </span>
+                </p>
             </footer>
         </div>
     </body>
